@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/myTableLayout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:collapseColumns="1"
+android:stretchColumns="0,1" >
+
+<TableRow>
+    <TextView
+        android:text="Column 1"
+        android:padding="10dp" />
+
+    <TextView
+        android:text="Column 2"
+        android:padding="10dp" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:text="Data 1"
+        android:padding="10dp" />
+
+    <TextView
+        android:text="Data 2"
+        android:padding="10dp" />
+</TableRow>
+
+</TableLayout>
