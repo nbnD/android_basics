@@ -14,13 +14,15 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     EditText editTextName;
+    String name;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         Button button = findViewById(R.id.buttonOne);
-         editTextName = findViewById(R.id.editTextName);
+        editTextName = findViewById(R.id.editTextName);
         Switch switchLayout = findViewById(R.id.switch1);
         CheckBox checkBox = findViewById(R.id.checkBox);
         RadioGroup radioGroup = findViewById(R.id.radioGroup);
@@ -49,7 +51,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.buttonOne:
-                Toast.makeText(this, editTextName.getText(), Toast.LENGTH_SHORT).show();
+                name = editTextName.getText().toString().trim();
+                if (name.isEmpty()) {
+                    editTextName.setError("Name cannot be empty");
+                    editTextName.requestFocus();
+                    return;
+                }
+                Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
+
+
                 break;
             case R.id.switch1:
                 Toast.makeText(this, "This is switch", Toast.LENGTH_SHORT).show();
