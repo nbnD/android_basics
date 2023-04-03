@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     RadioGroup radioGroup;
     RadioButton radioButton;
     TextView resultValue;
-
+    private ActivityResultLauncher<Intent> mGetContent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button.setOnClickListener(this);
 
 
-
+        mGetContent = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
+                new ActivityResultCallback<ActivityResult>() {
+                    @Override
+                    public void onActivityResult(ActivityResult result) {
+                        if (result.getResultCode() == RESULT_OK) {
+                            Intent data = result.getData();
+                            String resultStr = data.getStringExtra("result");
+                            resultValue.setText(resultStr);
+                        }
+                    }
+                });
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
@@ -47,7 +57,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
     }
-
 
 
     @Override
@@ -67,9 +76,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent i = new Intent(MainActivity.this, SecondScreen.class);
                 i.putExtra("name", name);
                 i.putExtra("gender", radioButton.getText());
+//                WITHOUT EXPECTING callback value from child activity
 
-                startActivity(i);
+//                startActivity(i);
 
+                /*When you navigate with data and Expect any return data from second screen*/
+                mGetContent.launch(i);
 
                 break;
 
