@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+    <item
+        android:id="@+id/action_edit_pop"
+        android:title="Edit Pop" />
+    <item
+        android:id="@+id/action_delete_pop"
+        android:title="Delete Pop" />
+</menu>
