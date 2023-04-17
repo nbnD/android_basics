@@ -16,11 +16,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+
+//        it is called when the app initialize code and maintains the UI
+//        i.e when activity is becoming visible to the user
         Log.d("lifecycle","onStart invoked");
     }
     @Override
     protected void onResume() {
         super.onResume();
+//        this is phase where user interacts with the app
         Log.d("lifecycle","onResume invoked");
     }
     @Override

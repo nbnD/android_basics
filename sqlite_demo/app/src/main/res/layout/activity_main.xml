@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Please enter name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etcell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Please enter cell no"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="submit"
+        android:text="SUBMIT" />
+
+    <Button
+        android:id="@+id/bshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showdata"
+        android:text="SHOW DATA" />
+
+    <Button
+        android:id="@+id/bedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="edit"
+        android:text="EDIT DATA " />
+
+    <Button
+        android:id="@+id/bdele"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="delete"
+        android:text="DELETE DATA" />
+</LinearLayout>
+
+<!--
+&lt;!&ndash;<?xml version="1.0" encoding="utf-8"?>&ndash;&gt;
+&lt;!&ndash;<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;
+&lt;!&ndash;    xmlns:app="http://schemas.android.com/apk/res-auto"&ndash;&gt;
+&lt;!&ndash;    xmlns:tools="http://schemas.android.com/tools"&ndash;&gt;
+&lt;!&ndash;    android:layout_width="match_parent"&ndash;&gt;
+&lt;!&ndash;    android:layout_height="match_parent"&ndash;&gt;
+&lt;!&ndash;    tools:context=".MainActivity">&ndash;&gt;
+&lt;!&ndash;    <LinearLayout&ndash;&gt;
+&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;
+&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;
+&lt;!&ndash;        android:layout_centerVertical="true"&ndash;&gt;
+&lt;!&ndash;        android:orientation="vertical"&ndash;&gt;
+&lt;!&ndash;        android:padding="16dp">&ndash;&gt;
+
+&lt;!&ndash;        <TextView&ndash;&gt;
+&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;
+&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;
+&lt;!&ndash;            android:layout_marginBottom="12dp"&ndash;&gt;
+&lt;!&ndash;            android:text="Add a new Student"&ndash;&gt;
+&lt;!&ndash;            android:textAlignment="center"&ndash;&gt;
+&lt;!&ndash;            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />&ndash;&gt;
+
+&lt;!&ndash;        <EditText&ndash;&gt;
+&lt;!&ndash;            android:id="@+id/editTextName"&ndash;&gt;
+&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;
+&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;
+&lt;!&ndash;            android:autofillHints="emailAddress"&ndash;&gt;
+&lt;!&ndash;            android:hint="Enter Student Name"&ndash;&gt;
+&lt;!&ndash;            android:inputType="textPersonName"&ndash;&gt;
+&lt;!&ndash;            android:minHeight="48dp"&ndash;&gt;
+&lt;!&ndash;            tools:targetApi="o" />&ndash;&gt;
+
+&lt;!&ndash;        <TextView&ndash;&gt;
+&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;
+&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;
+&lt;!&ndash;            android:layout_marginTop="10dp"&ndash;&gt;
+&lt;!&ndash;            android:paddingLeft="6dp"&ndash;&gt;
+&lt;!&ndash;            android:text="Select Course" />&ndash;&gt;
+
+&lt;!&ndash;        <Spinner&ndash;&gt;
+&lt;!&ndash;            android:id="@+id/spinnerDepartment"&ndash;&gt;
+&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;
+&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;
+&lt;!&ndash;            android:entries="@array/faculty"&ndash;&gt;
+&lt;!&ndash;            android:minHeight="48dp" />&ndash;&gt;
+
+&lt;!&ndash;        <EditText&ndash;&gt;
+&lt;!&ndash;            android:id="@+id/editTextGpa"&ndash;&gt;
+&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;
+&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;
+&lt;!&ndash;            android:hint="Enter GPA"&ndash;&gt;
+&lt;!&ndash;            android:inputType="numberDecimal"&ndash;&gt;
+&lt;!&ndash;            android:minHeight="48dp" />&ndash;&gt;
+
+&lt;!&ndash;        <Button&ndash;&gt;
+&lt;!&ndash;            android:id="@+id/buttonAddStudents"&ndash;&gt;
+&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;
+&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;
+&lt;!&ndash;            android:text="Add Student" />&ndash;&gt;
+
+&lt;!&ndash;        <TextView&ndash;&gt;
+&lt;!&ndash;            android:id="@+id/textViewViewStudent"&ndash;&gt;
+&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;
+&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;
+&lt;!&ndash;            android:padding="16dp"&ndash;&gt;
+&lt;!&ndash;            android:text="View Students"&ndash;&gt;
+&lt;!&ndash;            android:textAlignment="center"&ndash;&gt;
+&lt;!&ndash;            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"&ndash;&gt;
+&lt;!&ndash;            android:textStyle="bold" />&ndash;&gt;
+
+&lt;!&ndash;    </LinearLayout>&ndash;&gt;
+
+&lt;!&ndash;</RelativeLayout>&ndash;&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Please enter name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etcell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Please enter cell no"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="submit"
+        android:text="SUBMIT" />
+
+    <Button
+        android:id="@+id/bshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showdata"
+        android:text="SHOW DATA" />
+
+    <Button
+        android:id="@+id/bedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="edit"
+        android:text="EDIT DATA " />
+
+    <Button
+        android:id="@+id/bdele"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="delete"
+        android:text="DELETE DATA" />
+</LinearLayout>-->
+

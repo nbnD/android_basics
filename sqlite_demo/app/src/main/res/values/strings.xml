@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sqlite Demo</string>
+    <array name="faculty">
+        <item>BCA</item>
+        <item>BSc</item>
+        <item>BSc CSIT</item>
+        <item>Marketing</item>
+        <item>Human Resource</item>
+    </array>
+</resources>
