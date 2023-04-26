@@ -2,6 +2,8 @@ package com.flutterjunction.splash_login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,7 +29,13 @@ public class LoginActivity extends AppCompatActivity {
                 String username = usernameEditText.getText().toString().trim();
                 String password = passwordEditText.getText().toString().trim();
 
-                Toast.makeText(LoginActivity.this,"Username is "+username+"Password is"+password,Toast.LENGTH_SHORT).show();
+
+                //Implicit Intent
+                Intent intent=new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("http://www.flutterjunction.com"));
+                startActivity(intent);
+
+//                Toast.makeText(LoginActivity.this,"Username is "+username+"Password is"+password,Toast.LENGTH_SHORT).show();
             }
         });
     }

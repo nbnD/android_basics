@@ -12,17 +12,16 @@
         android:layout_margin="16dp"
         android:hint="Username"
         android:inputType="text"
-       />
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/usernameEditText"
         android:layout_margin="16dp"
         android:hint="Password"
         android:inputType="textPassword"
-       />
+        android:minHeight="48dp" />
 
 
     <TextView
