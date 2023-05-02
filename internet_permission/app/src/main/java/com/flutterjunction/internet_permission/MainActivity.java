@@ -18,18 +18,19 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     TextView internetStatus;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnStatus = (Button)findViewById(R.id.btnCheck);
-         internetStatus =findViewById(R.id.internetStatus);
+        Button btnStatus = (Button) findViewById(R.id.btnCheck);
+        internetStatus = findViewById(R.id.internetStatus);
         btnStatus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Check for Internet Connection
-                internetStatus.setText(""+isConnected());
+                internetStatus.setText("" + isConnected());
 
                 if (!isConnected()) {
 
@@ -48,17 +49,16 @@ public class MainActivity extends AppCompatActivity {
                     });
                     builder.show();
                 } else {
-
-
                     Toast.makeText(getApplicationContext(), "Connected", Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
+
     public boolean isConnected() {
         boolean connected = false;
         try {
-            ConnectivityManager cm = (ConnectivityManager)getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+            ConnectivityManager cm = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
             NetworkInfo nInfo = cm.getActiveNetworkInfo();
             connected = nInfo != null && nInfo.isAvailable() && nInfo.isConnected();
             return connected;
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        internetStatus.setText(""+isConnected());
+        internetStatus.setText("" + isConnected());
 
     }
 }
