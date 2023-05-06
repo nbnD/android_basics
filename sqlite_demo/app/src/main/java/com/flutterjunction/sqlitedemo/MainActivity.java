@@ -1,169 +1,117 @@
 package com.flutterjunction.sqlitedemo;
 
-import androidx.appcompat.app.AppCompatActivity;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.app.Activity;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.SQLException;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteStatement;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.PopupWindow;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
-import com.flutterjunction.sqlitedemo.database_helper.StudentsDatabase;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity {
-    EditText etname, etcell;
+    ArrayList<Country> countries;
+    SQLiteDatabaseHandler db;
+    Button btnSubmit;
+    PopupWindow pwindo;
+    Activity activity;
+    ListView listView;
+    CustomCountryList customCountryList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        etname = findViewById(R.id.etna);
-        etcell = findViewById(R.id.etcell);
-    }
-    public void showdata(View v) {
-        startActivity(new Intent(this, Data.class));
-    }
+        activity=this;
+        db= new SQLiteDatabaseHandler(this);
+        listView = (ListView) findViewById(R.id.list);
+        btnSubmit = (Button) findViewById(R.id.btnSubmit);
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addPopUp();
+            }
+        });
 
-    public void submit(View v) {
-        String name = etname.getText()
-                .toString()
-                .trim();
-        String cell = etcell.getText()
-                .toString()
-                .trim();
-        try {
-            StudentsDatabase db = new StudentsDatabase(this);
-            db.open();
-            db.creat(name, cell);
-            db.close();
-            Toast.makeText(MainActivity.this, "Successfully saved ", Toast.LENGTH_LONG)
-                    .show();
-            etname.setText("");
-            etcell.setText("");
-        } catch (SQLException e) {
-            Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_LONG)
-                    .show();
+        countries = (ArrayList) db.getAllCountries();
+        Log.d("Countries",String.valueOf(countries));
+
+
+        CustomCountryList customCountryList = new CustomCountryList(this, countries, db);
+        if(countries.size()!=0){
+            listView.setAdapter(customCountryList);
         }
+
+
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Toast.makeText(MainActivity.this, "You Selected " + countries.get(position).getCountryName() + " as Country", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
-    public void edit(View v) {
-        try {
-            StudentsDatabase db = new StudentsDatabase(this);
-            db.open();
-            db.update("1", "John", "24334421");
-            db.close();
-            Toast.makeText(MainActivity.this, "Successfully updated", Toast.LENGTH_LONG)
-                    .show();
-        } catch (SQLException e) {
-            Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_LONG)
-                    .show();
-        }
+    public void addPopUp() {
+        LayoutInflater inflater = activity.getLayoutInflater();
+        View layout = inflater.inflate(R.layout.edit_popup,
+                (ViewGroup) activity.findViewById(R.id.popup_element));
+        pwindo = new PopupWindow(layout, 600, 670, true);
+        pwindo.showAtLocation(layout, Gravity.CENTER, 0, 0);
+        final EditText countryEdit = (EditText) layout.findViewById(R.id.editTextCountry);
+        final EditText populationEdit = (EditText) layout.findViewById(R.id.editTextPopulation);
+
+        Button save = (Button) layout.findViewById(R.id.save_popup);
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String countryStr = countryEdit.getText().toString();
+                String population = populationEdit.getText().toString();
+                Country country = new Country(countryStr, Long.parseLong(population));
+                db.addCountry(country);
+                if(customCountryList==null)
+                {
+                    customCountryList = new CustomCountryList(activity, countries, db);
+                    listView.setAdapter(customCountryList);
+                }
+                customCountryList.countries = (ArrayList) db.getAllCountries();
+                ((BaseAdapter)listView.getAdapter()).notifyDataSetChanged();
+                for (Country country1 : countries) {
+                    String log = "Id: " + country1.getId() + " ,Name: " + country1.getCountryName() + " ,Population: " + country1.getPopulation();
+                    // Writing Countries to log
+//                    Log.d("Name: ", log);
+                }
+                pwindo.dismiss();
+            }
+        });
+    }
     }
 
-    public void delete(View v) {
-        try {
-            StudentsDatabase db = new StudentsDatabase(this);
-            db.open();
-            db.deleteEnter("1");
-            Toast.makeText(MainActivity.this, "Successfully delete", Toast.LENGTH_LONG)
-                    .show();
-            db.close();
-        } catch (SQLException e) {
-            Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_LONG)
-                    .show();
-        }
-    }
-}
 
-//import android.content.Intent;
-//import android.database.sqlite.SQLiteDatabase;
-//import android.os.Bundle;
-//import android.view.View;
-//import android.widget.EditText;
-//import android.widget.Spinner;
-//import android.widget.Toast;
-//
-//import java.text.SimpleDateFormat;
-//import java.util.Calendar;
-//
-//public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-//
-//    public static final String DATABASE_NAME = "student_db";
-//    SQLiteDatabase mDatabase;
-//    EditText editTextName, editTextGPA;
-//    Spinner spinnerDepart;
-//
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
-//
-//        mDatabase = openOrCreateDatabase(DATABASE_NAME, MODE_PRIVATE, null);
-//        createTable();
-//
-//
-//        editTextName = findViewById(R.id.editTextName);
-//        editTextGPA = findViewById(R.id.editTextGpa);
-//        spinnerDepart = findViewById(R.id.spinnerDepartment);
-//
-//        findViewById(R.id.buttonAddStudents).setOnClickListener(this);
-//        findViewById(R.id.textViewViewStudent).setOnClickListener(this);
-//
-//
-//    }
-//
-//    public void createTable() {
-//        String sql = "CREATE TABLE if not exists students (\n" +
-//                " id INTEGER NOT NULL CONSTRAINT employees_pk PRIMARY KEY AUTOINCREMENT,\n" +
-//                " name varchar(200) NOT NULL,\n" +
-//                " department varchar(200) NOT NULL,\n" +
-//                " gpa double NOT NULL,\n" +
-//                " joiningDate datetime NOT NULL\n" +
-//                ");";
-//        mDatabase.execSQL(sql);
-//    }
-//
-//    private void addStudent() {
-//        String name = editTextName.getText().toString().trim();
-//        String gpa = editTextGPA.getText().toString().trim();
-//        String depart = spinnerDepart.getSelectedItem().toString();
-//
-//
-//        //getting the current time for joining date
-//        Calendar cal = Calendar.getInstance();
-//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-//        String joiningDate = sdf.format(cal.getTime());
-//
-//        if (name.isEmpty()) {
-//            editTextName.setError("Name cannot be empty");
-//            editTextName.requestFocus();
-//            return;
-//        }
-//        if (gpa.isEmpty()) {
-//            editTextGPA.setError("GPA cannot be empty");
-//            editTextGPA.requestFocus();
-//            return;
-//        }
-//        String sql = "INSERT INTO students(name,department,gpa,joiningDate)" + "VALUES (?,?,?,?) ";
-//        mDatabase.execSQL(sql, new String[]{
-//                name, depart, gpa, joiningDate
-//        });
-//        Toast.makeText(this, "Student Added", Toast.LENGTH_SHORT).show();
-//    }
-//
-//    @Override
-//    public void onClick(View view) {
-//        switch (view.getId()) {
-//            case R.id.buttonAddStudents:
-//                addStudent();
-//                break;
-//            case R.id.textViewViewStudent:
-//                startActivity(new Intent(this, StudentsActivity.class));
-//                break;
-//
-//        }
-//    }
-//}
+
+
+
+
+
+
