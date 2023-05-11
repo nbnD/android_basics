@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">different_widgets</string>
+
+    <string name="spinner_label">Select a Fruit:</string>
+    <string-array name="fruits">
+        <item>Apple</item>
+        <item>Banana</item>
+        <item>Cherry</item>
+        <item>Orange</item>
+        <item>Pineapple</item>
+    </string-array>
 </resources>

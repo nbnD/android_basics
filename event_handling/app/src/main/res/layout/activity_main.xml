@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".MainActivity">
+
     <EditText
         android:id="@+id/editTextName"
         android:layout_width="match_parent"
@@ -21,9 +22,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ButtonOne" />
-
-
-
 
     <Switch
         android:id="@+id/switch1"
@@ -42,8 +40,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
@@ -68,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:checked="false"
+                android:checked="true"
                 android:padding="4dp"
                 android:text="Male"
                 android:textAlignment="center"
@@ -85,9 +82,14 @@
                 android:text="Female"
                 android:textAlignment="center"
                 android:textSize="20sp" />
-
         </RadioGroup>
     </LinearLayout>
 
-
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/fruits" />
 </LinearLayout>
