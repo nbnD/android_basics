@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener {
     EditText editTextName;
     String name;
-    private Spinner mySpinner;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,13 +29,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Switch switchLayout = findViewById(R.id.switch1);
         CheckBox checkBox = findViewById(R.id.checkBox);
         RadioGroup radioGroup = findViewById(R.id.radioGroup);
-        mySpinner = findViewById(R.id.spinner);
+        Spinner mySpinner = findViewById(R.id.spinner);
 
-        switchLayout.setChecked(true);
-        switchLayout.setTextOn("ON");
-        switchLayout.setTextOn("OFF");
 
         switchLayout.setText("hello");
+
         button.setOnClickListener(this);
         checkBox.setOnClickListener(this);
 
@@ -61,9 +59,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     return;
                 }
                 Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
-
-
                 break;
+
             case R.id.switch1:
                 Toast.makeText(this, "This is switch", Toast.LENGTH_SHORT).show();
                 break;
