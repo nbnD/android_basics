@@ -29,6 +29,7 @@ public class Fragment2 extends Fragment {
             @Override
             public void onClick(View view) {
                 listener.onFragment2ButtonClick();
+                textView.setText("");
             }
         });
 

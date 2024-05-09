@@ -1,0 +1,20 @@
+1) Clone this project
+2) Create a branch feature/your_name
+
+Create a proposed functionality
+
+3) Create a TextView of id "coloredText" Yellow color in FragmentA.
+    a) TextView should be in between EditText and Button
+    b) TextView should have text "Hello Color"
+4) Create a TextView of id "coloredTextValue" Yellow color in FragmentB.
+5) When clicking the button of FragmentA.
+    The value of coloredTextView should have "Hello Color".
+6) When clicking the button of FragmentB.
+    The value of "coloredTextView" should be empty.
+    And the "coloredText" of Step 3 should have text "Fragments Learned".
+
+When the proposed functionality is achieved
+
+7) Push the code to your branch
+8) Send pull request
+

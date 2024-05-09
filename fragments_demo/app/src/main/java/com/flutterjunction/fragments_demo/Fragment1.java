@@ -40,6 +40,7 @@ public class Fragment1 extends Fragment {
 
     public void resetEditText() {
         editText.setText("");
+
     }
 
     @Override
