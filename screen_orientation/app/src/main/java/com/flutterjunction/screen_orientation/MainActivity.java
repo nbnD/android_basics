@@ -15,5 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void changeOrientation(View view) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+    }public void makeStraight(View view) {
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
     }
 }

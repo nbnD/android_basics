@@ -1,0 +1,37 @@
+1) Resolution
+    Resolution refers to the total number of pixels on a screen,
+    typically given as width × height (e.g., 1920×1080).
+    This metric indicates how much detail the screen can display, with higher resolutions offering more detail.
+    Some common resolutions include:
+
+        HD (High Definition): 1280×720
+        Full HD (FHD): 1920×1080
+        Quad HD (QHD): 2560×1440
+        Ultra HD (UHD/4K): 3840×2160
+
+2) Screen Density
+    Screen Density (also known as pixel density or PPI - pixels per inch) measures the number of pixels
+    in a given physical area of the screen.
+    It is calculated based on the resolution and the size of the screen.
+    Higher screen density means more pixels per inch, resulting in sharper and clearer images.
+    Some examples of screen density classifications include:
+
+        LDPI (Low Density): ~120 PPI
+        MDPI (Medium Density): ~160 PPI
+        HDPI (High Density): ~240 PPI
+        XHDPI (Extra High Density): ~320 PPI
+        XXHDPI (Extra Extra High Density): ~480 PPI
+        XXXHDPI (Extra Extra Extra High Density): ~640 PPI
+
+
+3) Density-Independent Pixels (dp or dip)
+   Density-independent pixels (dp or dip) are a unit of measurement used in Android development
+   to ensure that user interface (UI) elements are displayed
+   consistently across different devices with varying screen densities.
+   The concept of dp helps create a more uniform appearance for apps by abstracting away the underlying pixel density.
+
+
+4) Screen Size
+   Screen size refers to the physical dimensions of a display, typically measured diagonally from one corner to the
+   opposite corner. It is an important specification for various devices such as smartphones, tablets, laptops,
+   monitors, and televisions. The measurement is given in inches and gives an idea of the display's real-world size.
