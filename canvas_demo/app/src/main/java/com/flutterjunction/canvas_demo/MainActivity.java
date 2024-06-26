@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,7 +28,13 @@ public class MainActivity extends AppCompatActivity {
         public CustomView(Context context) {
             super(context);
             paint = new Paint();
-            bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
+            bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.testlogo);
+
+            if (bitmap == null) {
+                Log.e("CustomView", "Bitmap is null. Resource decoding failed.");
+            }else {
+                Log.d("CustomView", "Bitmap decoded successfully. Width: " + bitmap.getWidth() + ", Height: " + bitmap.getHeight());
+            }
         }
 
         @Override
@@ -35,13 +42,12 @@ public class MainActivity extends AppCompatActivity {
             super.onDraw(canvas);
 
             // Set the background color
-            canvas.drawColor(Color.WHITE);
+            canvas.drawColor(Color.GREEN);
 
             // Set the paint color and style
             paint.setStyle(Paint.Style.FILL_AND_STROKE);
 
             paint.setColor(Color.RED);
-
 
             // Draw a rounded rectangle
             RectF rect = new RectF(50, 50, 250, 150);
