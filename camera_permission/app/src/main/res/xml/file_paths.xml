@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-files-path name="images" path="Pictures/" />
+</paths>
+    <!--Purpose of file_paths.xml
+    Secure File Sharing:
+    It ensures that only specified directories can be shared, enhancing security by preventing unauthorized file access.
+    Path Mapping: It maps specific directories in your app's private storage to URIs that other apps can access.
+     This allows apps like the camera app to save captured images directly to your app's storage.-->
