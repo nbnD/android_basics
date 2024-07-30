@@ -4,24 +4,109 @@
     <shared>
       <config />
     </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+        <config>
+          <theme>@style/Theme.Table_layout</theme>
+        </config>
+      </layout>
+    </layouts>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98c4b402-6b11-4d4b-acfa-2348e1d23f65" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../absolute_layout/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../absolute_layout/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../absolute_layout/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../absolute_layout/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../absolute_layout/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../absolute_layout/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../absolute_layout/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../absolute_layout/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activity_life_cycle/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../activity_life_cycle/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activity_life_cycle/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../activity_life_cycle/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activity_life_cycle/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../activity_life_cycle/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../alarms/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../alarms/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../alarms/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../alarms/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../alarms/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../alarms/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../alarms/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../alarms/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../alarms/app/src/main/java/com/flutterjunction/alarms/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../alarms/app/src/main/java/com/flutterjunction/alarms/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animation/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../animation/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animation/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../animation/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animation/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../animation/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animation/app/src/main/java/com/flutterjunction/property_animation/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../animation/app/src/main/java/com/flutterjunction/property_animation/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animation/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../animation/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../async_task/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../async_task/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../async_task/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../async_task/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../async_task/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../async_task/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../async_task/app/src/main/java/com/flutterjunction/async_task/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../async_task/app/src/main/java/com/flutterjunction/async_task/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../broadcast_receiver/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../broadcast_receiver/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../broadcast_receiver/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../broadcast_receiver/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../broadcast_receiver/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../broadcast_receiver/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../broadcast_receiver/app/src/main/java/com/flutterjunction/broadcast_receiver/MyBroadcastReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../broadcast_receiver/app/src/main/java/com/flutterjunction/broadcast_receiver/MyBroadcastReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../constraints_layout/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../constraints_layout/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../constraints_layout/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../constraints_layout/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../constraints_layout/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../constraints_layout/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../event_handling/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../event_handling/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../event_handling/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../event_handling/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../event_handling/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../event_handling/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../event_handling/app/src/main/java/com/flutterjunction/different_widgets/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../event_handling/app/src/main/java/com/flutterjunction/different_widgets/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fragments_demo/app/src/main/java/com/flutterjunction/fragments_demo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fragments_demo/app/src/main/java/com/flutterjunction/fragments_demo/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gestures_demo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gestures_demo/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gestures_demo/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gestures_demo/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gestures_demo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gestures_demo/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gestures_demo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gestures_demo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gestures_demo/app/src/main/java/com/flutterjunction/gestures_demo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gestures_demo/app/src/main/java/com/flutterjunction/gestures_demo/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gridview/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gridview/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gridview/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gridview/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gridview/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gridview/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../internet_permission/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../internet_permission/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../internet_permission/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../internet_permission/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../internet_permission/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../internet_permission/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../internet_permission/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../internet_permission/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../internet_permission/app/src/main/java/com/flutterjunction/internet_permission/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../internet_permission/app/src/main/java/com/flutterjunction/internet_permission/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linear_layout_demo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linear_layout_demo/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linear_layout_demo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linear_layout_demo/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linear_layout_demo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linear_layout_demo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../listview_demo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../listview_demo/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../listview_demo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../listview_demo/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../listview_demo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../listview_demo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recycler_view/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../recycler_view/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recycler_view/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../recycler_view/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recycler_view/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../recycler_view/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recycler_view/app/src/main/java/com/flutterjunction/recyclerview/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../recycler_view/app/src/main/java/com/flutterjunction/recyclerview/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../screen_orientation/app/src/main/java/com/flutterjunction/screen_orientation/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../screen_orientation/app/src/main/java/com/flutterjunction/screen_orientation/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../service/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../service/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../service/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service/app/src/main/java/com/flutterjunction/service/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service/app/src/main/java/com/flutterjunction/service/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service/app/src/main/java/com/flutterjunction/service/MusicPlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service/app/src/main/java/com/flutterjunction/service/MusicPlayerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sqlite_demo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sqlite_demo/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sqlite_demo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sqlite_demo/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sqlite_demo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sqlite_demo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sqlite_demo/app/src/main/java/com/flutterjunction/sqlitedemo/SQLiteDatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sqlite_demo/app/src/main/java/com/flutterjunction/sqlitedemo/SQLiteDatabaseHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/flutterjunction/table_layout/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/flutterjunction/table_layout/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user_notification/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user_notification/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user_notification/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user_notification/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user_notification/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user_notification/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user_notification/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user_notification/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user_notification/app/src/main/java/com/flutterjunction/user_notification/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user_notification/app/src/main/java/com/flutterjunction/user_notification/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[localhost:5555]" />
   <component name="ExternalProjectsData">
@@ -35,20 +120,28 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2NoXXkyoB3DCm4kcXO5ntUpNdl3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
-    <property name="cidr.known.project.marker" value="true" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/android_basics/absolute_layout&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="table_layout.app.main" />
@@ -76,6 +169,8 @@
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Auto>
       <Hybrid>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
@@ -83,14 +178,21 @@
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Hybrid>
-      <Java />
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
       <Native>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
         <option name="SHOW_STATIC_VARS" value="true" />
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
@@ -99,7 +201,6 @@
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
         <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
         <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
-        <option name="PROFILING_MODE" value="NOT_SET" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />

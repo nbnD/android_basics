@@ -1,34 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
 
-<TableLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-android:id="@+id/myTableLayout"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:collapseColumns="1,2"
-android:stretchColumns="*" >
+<!--<TableLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:id="@+id/myTableLayout"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:collapseColumns=""-->
+<!--android:stretchColumns="*" >-->
 
-<TableRow>
-    <TextView
-        android:text="Column 1"
-        android:padding="10dp" />
+<!--<TableRow>-->
+<!--    <TextView-->
+<!--        android:id="@+id/column1"-->
+<!--        android:text="Column 1"-->
+<!--        android:padding="10dp" />-->
 
-    <TextView
-        android:text="Column 2"
-        android:padding="10dp" />
-    <TextView
-        android:text="Column 3"
-        android:padding="10dp" />
-</TableRow>
+<!--    <TextView-->
+<!--        android:text="Column 2"-->
+<!--        android:padding="10dp" />-->
+<!--    <TextView-->
+<!--        android:text="Column 3"-->
+<!--        android:padding="10dp" />-->
+<!--</TableRow>-->
 
-<TableRow>
-    <TextView
-        android:text="Data 1"
-        android:padding="10dp" />
+<!--<TableRow>-->
+<!--    <TextView-->
+<!--        android:text="Data 1"-->
+<!--        android:padding="10dp" />-->
 
-    <TextView
-        android:text="Data 2"
-        android:padding="10dp" />
-</TableRow>
+<!--    <TextView-->
+<!--        android:text="Data 2"-->
+<!--        android:padding="10dp" />-->
+<!--</TableRow>-->
 
-</TableLayout>
+<!--</TableLayout>-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+    </TableLayout>
+
+</RelativeLayout>
