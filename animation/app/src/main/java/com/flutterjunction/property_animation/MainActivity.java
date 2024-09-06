@@ -44,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 //        for drawable animation
-        animationImageView = findViewById(R.id.animation_image_view);
-        animationDrawable = (AnimationDrawable) getResources().getDrawable(R.drawable.animation_drawable);
-        animationImageView.setImageDrawable(animationDrawable);
+//        animationImageView = findViewById(R.id.animation_image_view);
+//        animationDrawable = (AnimationDrawable) getResources().getDrawable(R.drawable.animation_drawable);
+//        animationImageView.setImageDrawable(animationDrawable);
 
         animateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,23 +61,23 @@ public class MainActivity extends AppCompatActivity {
 
 //              Rotation animation in Android allows you to animate the rotation of a view around a pivot point.
 //                ObjectAnimator animator = ObjectAnimator.ofFloat(targetView, "rotation", 0f, 360f);
-
-                //set the time for animation
+//
+//                set the time for animation
 //                animator.setDuration(1000);
-                //start animation
+//                start animation
 //                animator.start();
 
                 /*Property Animation*/
 
                 /*View animation*/
-//                Animation fadeInAnimation = new AlphaAnimation(0f, 1f);
-//                fadeInAnimation.setDuration(1000);
-//                targetView.startAnimation(fadeInAnimation);
+                Animation fadeInAnimation = new AlphaAnimation(0f, 1f);
+                fadeInAnimation.setDuration(1000);
+                targetView.startAnimation(fadeInAnimation);
 
                 /*View animation*/
 
                 /*For drawable animation*/
-                animationDrawable.start();
+//                animationDrawable.start();
             }
         });
     }

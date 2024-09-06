@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnStatus = (Button) findViewById(R.id.btnCheck);
         internetStatus = findViewById(R.id.internetStatus);
+
         btnStatus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

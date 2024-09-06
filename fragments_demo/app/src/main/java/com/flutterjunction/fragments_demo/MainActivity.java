@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity implements Fragment1.Fragment1Listener, Fragment2.Fragment2Listener {
+public class MainActivity extends AppCompatActivity implements Fragment1.Fragment1Listener,  Fragment2.Fragment2Listener {
     private Fragment1 fragment1;
     private Fragment2 fragment2;
 

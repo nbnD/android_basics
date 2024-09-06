@@ -37,7 +37,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button.setOnClickListener(this);
 
 
-        mGetContent = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
+        mGetContent = registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(),
                 new ActivityResultCallback<ActivityResult>() {
                     @Override
                     public void onActivityResult(ActivityResult result) {

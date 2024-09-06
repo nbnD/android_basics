@@ -14,7 +14,7 @@ import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener,  AdapterView.OnItemSelectedListener {
     EditText editTextName;
     String name;
 
@@ -35,10 +35,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switchLayout.setText("hello");
 
         button.setOnClickListener(this);
+
+
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
+
         checkBox.setOnClickListener(this);
+        switchLayout.setOnClickListener(this);
+
+
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton radioButton = findViewById(checkedId);
@@ -54,11 +65,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.buttonOne:
                 name = editTextName.getText().toString().trim();
                 if (name.isEmpty()) {
-                    editTextName.setError("Name cannot be empty");
+                    editTextName.setError("This is required");
                     editTextName.requestFocus();
                     return;
                 }
-                Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, name, Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.switch1:
@@ -81,4 +92,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onNothingSelected(AdapterView<?> parent) {
         Toast.makeText(this, "Not selected", Toast.LENGTH_SHORT).show();
     }
+
+
 }

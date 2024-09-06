@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -30,7 +31,13 @@ public class MainActivity extends AppCompatActivity {
 
         // Execute the background task using AsyncTask
         MyAsyncTask myAsyncTask = new MyAsyncTask();
-        myAsyncTask.execute("https://reqres.in/api/users?page=2");
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                myAsyncTask.execute("https://reqres.in/api/users?page=2");
+            }
+        }, 1000);
     }
 
     private class MyAsyncTask extends AsyncTask<String, Void, String> {
@@ -47,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(String... params) {
             // Perform background network operation
             String url = params[0];
-            Log.d("URL",""+url);
+            Log.d("URL", "" + url);
             String result = "";
 
             try {

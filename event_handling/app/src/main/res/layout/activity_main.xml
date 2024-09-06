@@ -60,6 +60,8 @@
             tools:targetApi="o">
 
             <!--adding a radio button -->
+
+            <!--adding a radio button -->
             <RadioButton
                 android:id="@+id/male"
                 android:layout_width="wrap_content"
@@ -71,7 +73,6 @@
                 android:textAlignment="center"
                 android:textSize="20sp" />
 
-            <!--adding a radio button -->
             <RadioButton
                 android:id="@+id/female"
                 android:layout_width="wrap_content"

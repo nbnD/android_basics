@@ -45,18 +45,25 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
         switch (action) {
             case MotionEvent.ACTION_DOWN:
+//                This event is triggered when the first finger touches the screen.
                 touchInfoBuilder.append("ACTION_DOWN\n");
                 break;
             case MotionEvent.ACTION_POINTER_DOWN:
+//                Occurs when an additional
+//                finger touches the screen while another finger is already touching it.
                 touchInfoBuilder.append("ACTION_POINTER_DOWN - pointerId: ").append(pointerId).append("\n");
                 break;
             case MotionEvent.ACTION_UP:
+//                when the last finger is lifted from the screen.
                 touchInfoBuilder.append("ACTION_UP\n");
                 break;
             case MotionEvent.ACTION_POINTER_UP:
+//                 when one of the multiple fingers is lifted from the screen,
+//                 but other fingers are still touching it.
                 touchInfoBuilder.append("ACTION_POINTER_UP - pointerId: ").append(pointerId).append("\n");
                 break;
             case MotionEvent.ACTION_MOVE:
+//                when there is a change in the position of any of the fingers on the screen.
                 touchInfoBuilder.append("ACTION_MOVE\n");
                 break;
         }

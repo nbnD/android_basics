@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         // Set the desired alarm time (e.g., 8:00 AM)
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
-        calendar.set(Calendar.HOUR_OF_DAY, 22);
-        calendar.set(Calendar.MINUTE, 00);
+        calendar.set(Calendar.HOUR_OF_DAY, 7);
+        calendar.set(Calendar.MINUTE, 46);
         calendar.set(Calendar.SECOND, 0);
 
         // Set the RTC_WAKEUP alarm
@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
     private void setRTCWakeupAlarm(Context context, long triggerAtMillis) {
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(context, MyBroadcastReceiver.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, ALARM_REQUEST_CODE, intent, 0);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, ALARM_REQUEST_CODE,
+                intent, PendingIntent.FLAG_IMMUTABLE);
         alarmManager.setExact(AlarmManager.RTC_WAKEUP, triggerAtMillis, pendingIntent);
     }
 }

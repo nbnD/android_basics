@@ -9,7 +9,8 @@ import android.os.IBinder;
 
 public class MusicPlayerService extends Service {
     private MediaPlayer mediaPlayer;
-
+//https://developer.android.com/reference/android/media/MediaPlayer
+//    https://developer.android.com/develop/background-work/services
     @Override
     public void onCreate() {
         super.onCreate();

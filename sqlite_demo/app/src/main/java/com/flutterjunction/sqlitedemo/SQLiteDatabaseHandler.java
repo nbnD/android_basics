@@ -57,7 +57,7 @@ public class SQLiteDatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(COUNTRY_NAME, country.getCountryName()); // Country Name
+       values.put(COUNTRY_NAME, country.getCountryName()); // Country Name
         values.put(POPULATION, country.getPopulation()); // Country Population
 
         // Inserting Row
@@ -78,7 +78,7 @@ public class SQLiteDatabaseHandler extends SQLiteOpenHelper {
         Country country = new Country(Integer.parseInt(cursor.getString(0)),
                 cursor.getString(1), cursor.getLong(2));
         // return country
-        return country;
+       return country;
     }
 
     // Getting All Countries

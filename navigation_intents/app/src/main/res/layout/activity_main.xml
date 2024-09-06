@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".MainActivity">
+
     <EditText
         android:id="@+id/editTextName"
         android:layout_width="match_parent"

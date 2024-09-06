@@ -25,14 +25,14 @@ public class MainActivity extends AppCompatActivity {
                 view=v;
             }
         });
-        stopButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                stopMusicService(v);
-            }
-        });
+            stopButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    stopMusicService(v);
+                }
+            });
 
-    }
+        }
 
     public void startMusicService(View view) {
         Intent serviceIntent = new Intent(this, MusicPlayerService.class);

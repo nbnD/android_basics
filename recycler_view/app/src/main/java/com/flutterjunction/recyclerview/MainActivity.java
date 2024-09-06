@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         items.add("Item 2");
         items.add("Item 3");
         items.add("Item 4");
-        items.add("Item 5");  items.add("Item 1");
+        items.add("Item 5");
+        items.add("Item 1");
         items.add("Item 2");
         items.add("Item 3");
         items.add("Item 4");
@@ -39,13 +40,13 @@ public class MainActivity extends AppCompatActivity {
         Comment these to use grid lists*/
         layoutManager = new LinearLayoutManager(this);
 
-        recyclerView.setLayoutManager(layoutManager);
+//        recyclerView.setLayoutManager(layoutManager);
 
         /*For simple verticle list*/
 
 
         /*For grid list Comment these to use vertical lists*/
-//        recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
 
         /*For grid list*/
 

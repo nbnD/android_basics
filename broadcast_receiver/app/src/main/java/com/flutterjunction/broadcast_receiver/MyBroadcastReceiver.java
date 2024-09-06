@@ -11,7 +11,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
 
         // Check the action of the received intent
-        if (intent.getAction().equals(Intent.ACTION_POWER_CONNECTED)) {
+        if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
             // The device is connected to a power source
             Toast.makeText(context, "Power connected", Toast.LENGTH_SHORT).show();
         } else if (intent.getAction().equals(Intent.ACTION_POWER_DISCONNECTED)) {

@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         customItems.add("Item 6");
         customItems.add("Item 7");
         customItems.add("Item 8");
+
+
         adapter = new CustomListAdapter(this, customItems);
 
 
